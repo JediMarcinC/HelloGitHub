@@ -13,7 +13,6 @@ class CreateToolTip(object):
         self.widget.bind("<Enter>", self.enter)
         self.widget.bind("<Leave>", self.close)
     def enter(self, event=None):
-        x = y = 0
         x, y, cx, cy = self.widget.bbox("insert")
         x += self.widget.winfo_rootx() + 25
         y += self.widget.winfo_rooty() + 20
